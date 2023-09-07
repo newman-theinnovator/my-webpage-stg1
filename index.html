@@ -63,7 +63,7 @@
 
     function updateCurrentTime() {
         const utcTimeElement = document.getElementById('utc-time');
-        const options = { hour12: false, hour: '2-digit', minute: '2-digit', second: '2-digit' };
+        const options = { hour12: false, hour: '2-digit', minute: '2-digit', second: '2-digit', timeZone: 'UTC' };
         const utcTimeString = new Date().toLocaleTimeString('en-US', options);
         utcTimeElement.textContent = `UTC Time: ${utcTimeString}`;
     }
